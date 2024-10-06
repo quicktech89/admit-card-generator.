@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admit Card Generator</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
-        .form-container { background: white; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto; }
-        input, button { width: 100%; padding: 10px; margin: 10px 0; }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            padding: 20px; 
+        }
+        .form-container { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            max-width: 400px; 
+            margin: auto; 
+        }
+        input, button { 
+            width: 100%; 
+            padding: 10px; 
+            margin: 10px 0; 
+        }
     </style>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+    
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCQKCtXvq0tMlAAnlBCiICJpL-QYR8ZTtA",
+            authDomain: "admit-card-generator.firebaseapp.com",
+            projectId: "admit-card-generator",
+            storageBucket: "admit-card-generator.appspot.com",
+            messagingSenderId: "421659049147",
+            appId: "1:421659049147:web:13e88940fcea3ecc547d9e"
+        };
+
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+    </script>
 </head>
 <body>
     <div class="form-container">
@@ -20,6 +54,7 @@
         </form>
         <div id="message"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
