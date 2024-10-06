@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admit Card Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        .form-container { background: white; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto; }
+        input, button { width: 100%; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Generate Your Admit Card</h2>
+        <form id="admitForm">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="text" id="class" placeholder="Enter your class" required>
+            <button type="submit">Generate Admit Card</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
